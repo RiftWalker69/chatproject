@@ -24,7 +24,10 @@ const Login = () =>{
             <div className='formwrap'>
                
                 <form onSubmit={handleSubmit}>
-                    <span className="tittle">Login</span>
+                <div className='logo'>
+                  <img src='https://cdn-icons-png.flaticon.com/512/11527/11527872.png'/>
+                  <span className='tittle'>Login</span>
+                  </div>
                     <input type='email' placeholder='Email' />
                     <input type='password' placeholder='Password' />
                     <button> Sign in </button>

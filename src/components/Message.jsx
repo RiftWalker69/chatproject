@@ -12,12 +12,12 @@ const Message = ({message}) =>{
        <div ref={ref} 
        className={`Message ${message.senderId === currentUser.uid && "owner"}`}>
             <div className="messageInfo">
-                < img src={message.senderId === currentUser.uid ? currentUser.photoURL: data.user.photoURL} alt="" />
+                < img className="userphoto" src={message.senderId === currentUser.uid ? currentUser.photoURL: data.user.photoURL} alt="" />
                 <span>Just now</span>
             </div>
             <div className="messageContent">
                 <p>{message.text}</p>
-                 < img src={message.img} alt="" />
+                 < img className="photoshare" src={message.img} alt="" />
           </div>
             
         </div>           

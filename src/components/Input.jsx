@@ -84,10 +84,10 @@ const Input = () =>{
             <div className="send">
                 <input style={{display:'none'}} type="file" id="file" onChange={e=>setImg(e.target.files[0])} />
                 <label htmlFor="file">
-                    <img className="icon" src={gal} alt="" />
+                    <img className="icon" src="https://cdn-icons-png.flaticon.com/512/9187/9187554.png" alt="" />
                 </label>
                 <button onClick={handleSend}>
-                    <img src={send}/>
+                    <img src="https://cdn-icons-png.flaticon.com/128/561/561226.png"/>
                 </button>
             </div>
             

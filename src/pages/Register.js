@@ -68,15 +68,18 @@ uploadTask.on('state_changed',
             
             <div className='formwrap'>
                 <form onSubmit={handleSubmit}>
-                <span className='tittle'>Register</span>
+                <div className='logo'>
+                  <img src='https://cdn-icons-png.flaticon.com/512/11527/11527872.png'/>
+                  <span className='tittle'>Register</span>
+                  </div>
                     <input type='text' placeholder='Display Name' />
                     <input type='email' placeholder='Email' />
                     <input type='password' placeholder='Password' />
                     <input style={{display: "none"}} type='file' id='file'/>
                     <label htmlFor='file'>
-                        <img src={gallery} alt=''/>
+                        <img src="https://cdn-icons-png.flaticon.com/512/9171/9171530.png" alt=''/>
                         <span> Add an avatar </span></label>     
-                    <button> Sign up </button>
+                    <button>Submit!</button>
                     {err&&<span>Something is wrong</span>}
                     <p>You do have an account then <Link to={"/login"} >Login</Link></p>
                 </form>
